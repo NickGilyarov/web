@@ -1,0 +1,170 @@
+<!DOCTYPE html> <!--обозначние HTML5-->
+
+<html> <!--основной тег сайта-->
+<head> <!--шапка сайта, тут все стили, скрипты, имя автора, метатеги-->
+	<title>Сайт</title> <!--название страницы-->
+	<meta charset="utf-8" /> <!--кодировка  -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!--какой язык и кодировку используем на сайте-->
+	<meta name="description" content="" /> <!--описание сайта, для поиска-->
+	<meta name="keywords" content="" /> <!--ключевые слова поиска-->
+	<link href="" rel="stylesheet" type="text/css" /> <!--подключение стилей-->
+	<script src=""></script> <!---->
+</head>
+<body> <!--вся видимая часть сайта-->
+	<p>абзац</p> <!--это тег для абзаца, имеет атрибут "align"-->
+	<h1></h1> <!--теги заголовков-->
+	<h2></h2>
+	<h3></h3>
+	<h4></h4>
+	<h5></h5>
+	<h6></h6>
+	<b></b> <!--тег жирности текста-->
+	<strong></strong> <!--более предпочтительные тег жирности текста-->
+	<i></i> <em></em> <!--теги курсива, ем предпочтительнее-->
+	<strike></strike> <!--перечеркивает текст-->
+	<u></u> <!--подчеркивает текст-->
+	
+	<p><abbr title="Hyper Text Mark-up Language">HTML</abbr></p> <!--тег абвеатуры, титл это атрибут-->
+	<address></address> <!--выделяет текст контактного адреса-->
+	
+	<p>этот <strike><strong><em>текст</em></strong> для <u>пробы</u></strike></p>
+	<pre></pre> <!--тег для сохранения все пробелов и отступов-->
+	<blockquote cite="www.googole.com"></blockquote> <!--вывод объемной цитаты, имеет атрибут -->
+	
+	<small></small> <!--тег для выделения текста меньшим шрифтом-->
+	<big></big> <!--тег для выделения большим шрифтом-->
+	<q cite=""></q> <!--тег для цитаты-->
+	<hr /> <!--тег гориизонтальной линии-->
+	<br /> <!--образует пустую строку-->
+	<nobr></nobr> <!--текст будет в одну строчку-->
+	
+	<ol>
+		<li></li> <!--элемент списка-->
+	</ol> <!--пронумерованный список-->
+	
+	<ol type="I" start="4" reversed="reversed"> <!--i,A,a,1 --> <!--указывает с какой цифры или буквы начнется список,делает реверсивный список-->
+		<li></li>
+	</ol>
+	
+	<ul type="circle"> <!--непронумерованный список, square, disc-->
+		<li></li>
+	</ul>
+	
+	<dir> <!--непронумерованный список, имеет больший отступ-->
+		<li></li>
+	</dir>
+	
+	<a href="http://google.com">тег с атрибутом для ссылок</a>
+	<a href="http://google.com" target="_blank">тег с атрибутом для ссылок, с открытием в новом окне</a>
+	<a href="http://google.com" title="переход на гугл">тег с атрибутом для ссылок</a> <!--титл служит для подсказки, может применяться практически везде-->
+	
+	<a href="#example">тег с атрибутом для ссылок</a>
+	<a name="example"></a> <!--теги для перехода в определенное место сайта, второй тег ставится в место перехода-->
+	
+	<a href="mailto:123@mail.ru">Email</a> <!--ссылка для открытия и отправки почты-->
+	
+	<img src="" width="" height="" title="" alt="" border="" align=""/> <!--тег для вставки изображения, может задаваться в пикселях и процентах-->
+	
+	<div></div> <!--тег обзаца, блока, нужен стиль-->
+	<span></span> <!--нужен для стиля-->
+	
+	<form name="test" action="" method=""> <!--тег отправки формы-->
+		
+		<label for="имя">Введите имя</label><input type="text" value="поле" placeholder="поле" name="имя" id="имя" title="подсказка" maxlength="3"/>
+		
+		<label for="date">День рождения</label> <input type="date"/> <!--создает кадендарь, даты-->
+		
+		<label for="date">URL: </label><input type="url"/>
+		
+		<input type="tel" />
+		
+		<input type="range" />
+		
+		<input type="radio" name="state" />
+		
+		<input type="password"/>
+		
+		<input type="number" />
+		
+		<input type="file" />
+		
+		<input type="color" />
+		
+		<input type="checkbox" />
+		
+		<input type="button" /> <!--для JS без перезагрузки-->
+		
+		<input type="submit" value="Send" /> <!--для php с перезагрузкой-->
+		
+		<input type="reset"/> <!--осчистка формы-->
+	</form>
+	
+	<textarea placeholder="example"></textarea>
+	<button>отправить</button>
+	
+	<select> <!--селектор выбора-->
+		<option>пример</option>
+		<option selected="selected">.....</option> <!--параметр по умолчанию-->
+	</select>
+	
+	<form action="" method="post">
+	<select size="5" multiple="multiple" name="hero[]">
+		<option disabled="disabled">выберрите героя</option>
+		<option value="Чебурашка">Чебурашка</option>
+		<option selected="selected" value="Гена">Гена</option>
+		<option value="Шапокляк">Шапокляк</option>
+		<option value="Крыса Лариса">Крыса Лариса</option>
+	</select>
+	<input type="submit" value="Отправить" />
+	</form>
+	
+	<header> <!---HTML5, шапка сайта-->
+	
+	</header>
+	
+	<article> статья новость информация....</article>
+	<aside>боковая панель</aside>
+	<menu> <!--тег меню-->
+		<li></li>
+	</menu>
+	<audio controls="controls" autoplay="autoplay" loop="loop"> <!--тег аудио-->
+		<source src="" />
+	</audio>
+	
+	<video> <!--тег видео-->
+		<source src="">
+	</video>
+	
+	позиционирует текст <sub>ниже</sub>
+	помещает текст <sup>выше</sub>
+	
+	<footer> <!--низ сайта-->
+	
+	</footer>
+	
+	
+	<details>
+		<summary>Информация об авторе</summary>
+		<p>Бендер</p>
+	</details>
+	
+	<mark>веделение</mark>
+	
+	<ruby>
+		символ или слово<rt>тут объяснение надо ним</rt>
+		<rt></rt>
+	</ruby>
+	
+	<progress max="100" value="25"> <!--тег индикатора прогресса-->
+	загружено на <span id="value">25</span>%
+	</progress>
+	
+	<form oninput="result.value=(cm.value/2.54).toFixed(2)"> <!--форма перевода из одной системы измерения в другую-->
+		<p>Введите длинну в сантиметрах:
+		<input type="number" name="cm" autofocus></p>
+		<p>Длинно в дюймах: <output name="result">0</output></p>
+		
+	
+</body>
+
+</html>
