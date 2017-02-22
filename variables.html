@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript"> 
+		var global = 12;
+		var i = 10; /*глобальная переменная*/
+
+		function test () {
+			var global = 1;
+			var i = 5; /*локальная переменная*/
+		}
+
+		test();
+		document.write("Global - " + global + ", variable i -" + i);
+
+	</script>
+</body>
+</html>
