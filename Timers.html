@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+		/*var id = setInterval("myFunct_1()", 1000); //подсчет идет в милисекундах//
+		var counter = 0;
+
+		/function myFunct_1 () {
+			counter++;
+			alert("Секунд прошло - " + counter);
+			if(counter == 5) clearInterval(id); //ставим ограничение//
+		}*/
+
+var counter = 0; 
+function timer() { 
+	counter++; document.getElementById("count").innerHTML = counter; 
+	setTimeout(function() { timer()} , 1000); 
+} 
+</script> 
+</head> 
+<body onload="timer();"> 
+Секунд прошло <span id="count">0</span> 
+</body>
+</html>
+
+
+
+
